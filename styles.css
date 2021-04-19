@@ -1,61 +1,183 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
-.header{
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+.navegacion__menu {
+  width: 33%;
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  font-size: 25px; /* Darle tamaño al icono */
+}
+.navegacion__logo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.navegacion__logo__imagen {
+  width: 50%;
+  height: 50%;
+}
+.navegacion__carrito {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  font-size: 25px;
+}
+.busqueda {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  border-bottom: 1px solid black;
+  padding-top: 15px;
+}
+.busqueda__input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+}
+.busqueda__boton {
+  font-size: 25px;
+  color: black;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(assets/images/banner_movil.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+}
+.banner__titulo{
+    color: white;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 0;
+    font-weight: 400;
+    
+}
+.banner__p{
+    height: 50px;
+    color: white;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    
+}
+.card__btn{
+    font-weight: 700;
+    margin-left: 10px;
+}
+.sells__title{
+    font-size: 700;
+    margin-left: 10px;
+    
+}
+.sells__title::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    margin-top: 40px;
+    background-color: #C0C0C0;
+}
+.sells__contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sells__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: 5px;
+    height: 500px;
+}
+.card__image{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.card__img{
+    width: 100%;
+    object-fit: cover;
+}
+.card__title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+}
+.card__star{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #F8475F;
+    padding-bottom: 10px;
+}
+
+.card__info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: whitesmoke;
+    padding-bottom: 10px;
 }
-.navegacion{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+.one{
+    font-weight: 400;
+    font-size: 15px;
+    color: #7A7A7A;
+    text-decoration-line: line-through;
+    padding-bottom: 5px;
+}
+.two{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.three{
+    font-weight: 400;
+    font-size: 15px;
+    color: #7A7A7A;
+    padding-bottom: 5px;
+}
+
+.card__btn{
+    background: black;
+    color: white;
     height: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
 }
-.navegacion__menu{
-    width: 33%;
-    display: flex;
-    justify-content: left;
-    padding-left: 15px;
-    font-size: 25px; /* Darle tamaño al icono */
-}
-.navegacion__logo{
-    width: 33%;
-    display: flex;
-    justify-content: center;
-}
-.navegacion__logo__imagen{
-    width: 50%;
-    height: 50%;
-}
-.navegacion__carrito{
-    width: 33%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-    font-size: 25px;
-}
-.busqueda{
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    border-bottom: 1px solid black;
-    padding-top: 15px;
-}
-.busqueda__input{
-    width: 90%;
-    border: none;
-    background-color: whitesmoke;
-}
-.busqueda__boton{
-    font-size: 25px;
-    color: black;
-}
+
