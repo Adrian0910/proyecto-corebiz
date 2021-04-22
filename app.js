@@ -10,7 +10,10 @@ const crearContenido = async () => {
   })
 }
 
+
 function crearProducto(producto) {
+
+
   const div = document.createElement('div')
   //div.classList.add('card__img')
 
@@ -22,8 +25,9 @@ function crearProducto(producto) {
   h3.textContent = `${producto.productName}`
   h3.classList.add('card__title')
 
-  const stars = document.createElement('p')
-  stars.textContent = `${producto.stars}`
+  const stars = document.createElement('div')
+  stars.innerHTML = `${producto.stars}`
+  stars.classList.add('card__title')
 
 
 
@@ -41,7 +45,7 @@ function crearProducto(producto) {
   precio.classList.add('card__info')
 
   const info = document.createElement('div')
-  info.textContent = `${producto.installments.values[0]}`
+  info.textContent = `${producto.installments[0]}`
   info.classList.add('card__title')
 
   const button = document.createElement('button')
@@ -60,3 +64,5 @@ function crearProducto(producto) {
 }
 
 window.onload = crearContenido()
+
+
