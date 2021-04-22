@@ -31,8 +31,8 @@ body {
   justify-content: center;
 }
 .navegacion__logo__imagen {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 .navegacion__carrito {
   width: 33%;
@@ -96,10 +96,12 @@ body {
 .card__btn{
     font-weight: 700;
     margin-left: 10px;
+    align-items: center;
 }
 .sells__title{
     font-size: 700;
     margin-left: 10px;
+    
     
 }
 .sells__title::before{
@@ -139,8 +141,10 @@ body {
 }
 .card__title{
     text-align: center;
+    margin: auto;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
+    color: #7A7A7A;
 }
 .card__star{
     display: flex;
@@ -154,7 +158,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    font-weight: bolder;
 }
 
 .one{
@@ -180,8 +184,20 @@ body {
     background: black;
     color: white;
     height: 50px;
+    width: 175px;
     font-weight: 700;
     font-size: 15px;
     border-radius: 10px;
+    margin-left: 95px;
+
+}
+
+.tachado{
+    
+    margin-left: 150px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration:line-through;
+    color: #7A7A7A;
 }
 
